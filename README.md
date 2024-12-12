@@ -48,7 +48,9 @@ npm run dev
    - Minimum temperature
    - Maximum temperature 
    - Humidity percentage
+   - Pressure
    - Celsius conversion
+   - Kelvin conversion
 
 ## 🔑 API Setup
 
