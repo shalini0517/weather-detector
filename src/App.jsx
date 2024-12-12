@@ -8,6 +8,7 @@ function App() {
   const [mincelsius, setminCelsius] = useState(0)
   const [maxcelsius, setmaxCelsius] = useState(0)
   const [humidity, sethumidity] = useState(0)
+  const [pressure, setpressure] = useState(0)
   const [city, setCity] = useState('')
   const [error, setError] = useState(null);
 
@@ -40,6 +41,7 @@ function App() {
         setminTemperature(data.main.temp_min);
         setmaxTemperature(data.main.temp_max);
         sethumidity(data.main.humidity);
+        setpressure(data.main.pressure);
         convertToCelsius(data.main.feels_like);
         convertToCelsius(data.main.temp_min);
         convertToCelsius(data.main.temp_max);
@@ -95,6 +97,10 @@ function App() {
                 <div className="bg-gray-50 p-4 rounded-lg">
                   <p className="text-sm text-gray-600">Humidity</p>
                   <p className="text-lg font-semibold">{humidity}%</p>
+                </div>
+                <div className="bg-gray-50 p-4 rounded-lg">
+                  <p className="text-sm text-gray-600">Pressure</p>
+                  <p className="text-lg font-semibold">{pressure} hpa</p>
                 </div>
                 <div className="bg-gray-50 p-4 rounded-lg">
                   <p className="text-sm text-gray-600">Min Temp (K)</p>
