@@ -73,7 +73,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## 📧 Contact
 
-Your Name - Shalini Patel
+Name - Shalini Patel
 
 Project Link: github(https://github.com/shalini0517/weather-detector)
 
